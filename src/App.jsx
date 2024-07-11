@@ -1,5 +1,5 @@
 import videoFile from './assets/2.mp4';
-// import videoFileOgg from './assets/vid.ogg';
+import videoFileOgg from './assets/1.ogg';
 import videoFileWebm from './assets/1.webm';
 // import videoImage from './assets/vid-image.png';
 import VideoBg2 from './components/VideoBg/VideoBg';
@@ -10,7 +10,7 @@ function App() {
 			<VideoBg2
 				videoFileMp4={videoFile}
 				videoFileWebm={videoFileWebm}
-				// videoFileOgg={videoFileOgg}
+				videoFileOgg={videoFileOgg}
 				// videoPoster={videoImage}
 				darken={true}
 				fullScreen={true}
