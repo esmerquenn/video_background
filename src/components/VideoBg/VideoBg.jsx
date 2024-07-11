@@ -12,8 +12,7 @@ function VideoBg({
 	muted = true,
 	overlay = true,
 	OverlayTopOffset = 0,
-	caption = '',
-	description = '',
+	
 	AriaLabel,
 }) {
 	return (
@@ -27,8 +26,6 @@ function VideoBg({
 					style={
 						OverlayTopOffset !== 0 ? { paddingTop: OverlayTopOffset } : {}
 					}>
-					{caption && <h1>{caption}</h1>}
-					{description && <p>{description}</p>}
 				</div>
 			)}
 

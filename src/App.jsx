@@ -19,9 +19,7 @@ function App() {
 				muted={true}
 				overlay={true}
 				OverlayTopOffset={0}
-				caption='Lorem ipsum dolor'
-				description='Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, nihil! Ad corporis ab, quisquam est eum modi temporibus! Ipsa architecto alias praesentium eum voluptas amet laudantium quas adipisci odio sint!'
-				AriaLabel='Descriptive Label for Video'
+				
 			/>
 
 			<div className='page'>

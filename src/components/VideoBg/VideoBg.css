@@ -6,15 +6,8 @@
 .videobg-container.full-screen {
 	height: 100vh;
 }
+body{background: #050D16;}
 
-.videobg-container.darken {
-	/* background-color: rgba(0, 0, 0, 0.3); */
-	background-image: linear-gradient(
-		rgba(0, 0, 0, 0.1),
-		rgba(0, 0, 0, 0.2),
-		rgba(0, 0, 0, 0.9)
-	);
-}
 
 .videobg-container .overlay {
 	position: absolute;
