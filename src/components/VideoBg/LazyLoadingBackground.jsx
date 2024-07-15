@@ -338,11 +338,11 @@ function LazyLoadingBackground() {
           <div className="loader"></div>
         </div>
       )}
-      <video ref={videoRef1} className="video_bg video-element" preload="auto" autoPlay muted style={{ display: "block" }}>
+      <video ref={videoRef1} className="video_bg video-element" playsInline preload="auto" autoPlay muted style={{ display: "block" }}>
         <source src={video1} type="video/mp4" />
       </video>
 
-      <video ref={videoRef2} className="video_bg video-element" preload="auto" muted loop style={{ display: "none" }}>
+      <video ref={videoRef2} className="video_bg video-element" playsInline preload="auto" muted loop style={{ display: "none" }}>
         <source src={video2} type="video/mp4" />
       </video>
     </div>
