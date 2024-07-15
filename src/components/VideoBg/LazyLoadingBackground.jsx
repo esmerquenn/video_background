@@ -265,7 +265,7 @@ import useWidth from "./UseWidth";
 import video1 from "./../../assets/2.mp4";
 import video2 from "./../../assets/anime002.mp4";
 import video3 from "./../../assets/aaa.mp4";
-import video4 from "./../../assets/new1.mp4";
+import video4 from "./../../assets/new3.mp4";
 import "./VideoBg.css";
 
 function LazyLoadingBackground() {
