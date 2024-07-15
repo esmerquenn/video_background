@@ -118,46 +118,36 @@ function LazyLoadingBackground() {
 
   useEffect(() => {
     const handleVideo1Ended = () => {
-      videoRef1.current.style.display = 'none';  // İlk videoyu gizle
-      videoRef2.current.style.display = 'block'; // İkinci videoyu göster
-      videoRef2.current.play(); // İkinci videoyu başlat
+      videoRef1.current.style.display = 'none'; 
+      videoRef2.current.style.display = 'block'; 
+      videoRef2.current.play(); 
     };
 
-    const handleVideo2Ended = () => {
-      videoRef2.current.style.display = 'none';  // İkinci videoyu gizle
-      videoRef1.current.style.display = 'block'; // İlk videoyu göster
-      videoRef1.current.play(); // İlk videoyu başlat
-    };
 
-    // Event listeners for video ended events
     videoRef1.current.addEventListener('ended', handleVideo1Ended);
-    videoRef2.current.addEventListener('ended', handleVideo2Ended);
-
-    // Cleanup function
     return () => {
       videoRef1.current.removeEventListener('ended', handleVideo1Ended);
-      videoRef2.current.removeEventListener('ended', handleVideo2Ended);
     };
   }, [width]);
 
   useEffect(() => {
-    // Initial play of videos based on screen width
-    if (width <= 768) {
-      videoRef1.current.style.display = 'none';
-      videoRef2.current.style.display = 'block';
+    if (width < 768) {
+   
       videoRef1.current.src = video3;
+      videoRef2.current.src = video4;
       videoRef2.current.play();
+      console.log('kucuk');
     } else {
-      videoRef1.current.style.display = 'block';
-      videoRef2.current.style.display = 'none';
       videoRef1.current.src = video1;
+      videoRef2.current.src = video2;
+      console.log('buyuk');
       videoRef1.current.play();
     }
   }, [width]);
 
+
   return (
     <div className="videobg-container">
-      {/* First video */}
       <video
         ref={videoRef1}
         className="video_bg video-element"
@@ -169,7 +159,6 @@ function LazyLoadingBackground() {
         <source src={video1} type="video/mp4" />
       </video>
 
-      {/* Second video (initially hidden) */}
       <video
         ref={videoRef2}
         className="video_bg video-element"
