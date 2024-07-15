@@ -22,7 +22,9 @@ function App() {
 				OverlayTopOffset={0}
 				
 			/> */}
+			
 			<LazyLoadingBackground/>
+
 		</>
 	);
 }

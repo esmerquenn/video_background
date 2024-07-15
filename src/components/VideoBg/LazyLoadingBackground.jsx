@@ -225,7 +225,7 @@ function LazyLoadingBackground() {
 
   return (
     <div className="videobg-container">
-      {loading && <div className="loading-spinner">Loading...</div>}
+      {loading &&<div className="loading"><div className="loader"></div></div>}
       <video ref={videoRef1} className="video_bg video-element" preload="auto" autoPlay muted style={{ display: "block" }}>
         <source src={video1} type="video/mp4" />
       </video>
